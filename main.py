@@ -5,8 +5,8 @@ import pandas
 import datetime as dt
 import smtplib
 import os
-my_email = os.getenv(MY_EMAIL)
-my_password = os.getenv(MY_PASSWORD)
+my_email = os.getenv("MY_EMAIL")
+my_password = os.getenv("MY_PASSWORD")
 
 now = dt.datetime.now()
 data_birthday = pandas.read_csv("birthdays.csv")
